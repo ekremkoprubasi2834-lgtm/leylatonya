@@ -262,13 +262,13 @@ export function HomePage() {
         <div className="page-shell grid gap-14 lg:grid-cols-12 lg:items-center">
           <Reveal className="relative lg:col-span-7">
             <ParallaxImage
-              src="/images/leyla-story-reference.png"
+              src="/images/leyla-story-face-reference.png"
               alt="Leyla Tonya'nın saç tasarımı üzerinde çalıştığı an"
               className="aspect-[4/5] w-[82%] sm:aspect-[5/4]"
               imageClassName="object-left"
             />
             <ParallaxImage
-              src="/images/leyla-story-reference.png"
+              src="/images/leyla-story-face-reference.png"
               alt="Saç bakım ritüelinden yakın plan"
               className="absolute -bottom-12 right-0 aspect-[4/5] w-[42%] shadow-[0_28px_80px_rgba(89,65,48,0.18)]"
               imageClassName="object-[45%_70%]"
@@ -317,7 +317,7 @@ export function HomePage() {
             <div className="lg:col-span-8">
               {services.map((service, index) => (
                 <Reveal key={service.title} delay={index * 0.05}>
-                  <a href="#randevu" className="service-row group">
+                  <a href="#hizmetler" className="service-row group">
                     <span className="service-title">{service.title}</span>
                     <span className="max-w-xs text-sm leading-6 text-ink/54">
                       {service.description}
@@ -452,7 +452,7 @@ export function HomePage() {
             </h2>
             <div className="mt-10 space-y-9">
               {locations.map((location) => (
-                <a href="#randevu" className="location-block group" key={location.name}>
+                <a href="#subeler" className="location-block group" key={location.name}>
                   <div>
                     <h3 className="font-editorial text-3xl sm:text-4xl">
                       {location.name}
@@ -492,7 +492,7 @@ export function HomePage() {
             </h2>
           </div>
           <div className="flex flex-wrap gap-5">
-            <TextLink href="https://www.instagram.com/leylatonyasalonmode/">
+            <TextLink href="https://www.instagram.com/leylatonya/">
               @leylatonyasalonmode
             </TextLink>
             <TextLink href="https://www.instagram.com/leylatonya/">
@@ -562,9 +562,9 @@ export function HomePage() {
             <div>
               <div className="footer-label">Instagram</div>
               <a
-                href="https://www.instagram.com/leylatonyasalonmode/"
+                href="https://www.instagram.com/leylatonya/"
                 className="footer-instagram"
-                aria-label="Leyla Tonya Salon Mode Instagram"
+                aria-label="Leyla Tonya Instagram"
               >
                 <span>@leylatonyasalonmode</span>
                 <span aria-hidden="true">↗</span>
@@ -574,8 +574,8 @@ export function HomePage() {
           <div className="footer-bottom">
             <span>© 2026 Leyla Tonya. Tüm hakları saklıdır.</span>
             <div className="flex gap-6">
-              <a className="hover:text-cream" href="#">Gizlilik</a>
-              <a className="hover:text-cream" href="#">KVKK</a>
+              <span>Gizlilik</span>
+              <span>KVKK</span>
             </div>
           </div>
         </div>
